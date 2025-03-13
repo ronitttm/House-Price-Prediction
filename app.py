@@ -24,7 +24,6 @@ app.add_middleware(
 )
 
 
-
 # Define input format
 class HouseFeatures(BaseModel):
     MedInc: float	
