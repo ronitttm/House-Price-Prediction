@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>House Price Prediction</title>
     <style>
         /* General Styling */
+        html {
+            zoom: 1; /* ⬅ Ensures correct zoom */
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(to right, #74ebd5, #acb6e5);
@@ -15,6 +19,8 @@
             height: 100vh;
             margin: 0;
             padding: 20px;
+            max-width: 1200px; /* ⬅ Prevents zoom-in effect */
+            margin: auto;
         }
 
         .container {
@@ -23,7 +29,7 @@
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             width: 100%;
-            max-width: 600px; /* ⬅ Increased width */
+            max-width: 600px;
             text-align: center;
             animation: fadeIn 0.8s ease-in-out;
         }
@@ -32,7 +38,7 @@
             color: #333;
             font-weight: 600;
             margin-bottom: 15px;
-            font-size: 24px; /* ⬅ Adjusted font size */
+            font-size: 24px;
         }
 
         /* Form Styling */
