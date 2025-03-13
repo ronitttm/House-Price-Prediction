@@ -15,14 +15,14 @@ with open("scaler.pkl", "rb") as f:
 # Initialize FastAPI app
 app = FastAPI()
 
-# ✅ Allow CORS for all origins (for testing, restrict in production)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Change to ["https://your-frontend-url.com"] in production
     allow_credentials=True,
-    allow_methods=["*"],  # ✅ Allows OPTIONS method
+    allow_methods=["GET", "POST", "OPTIONS"],  # ✅ Ensure OPTIONS is included
     allow_headers=["*"],
 )
+
 
 
 # Define input format
