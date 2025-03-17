@@ -3,7 +3,7 @@
 This API predicts house prices based on various features such as median income, house age, number of rooms, and location details. The API is built using **FastAPI** and is deployed on **Render**.  
 
 ## 🚀 Deployment  
-- **Backend (FastAPI) hosted on Render:** https://house-price-prediction-tu3t.onrender.com
+- **Backend (FastAPI) hosted on Render:** https://house-price-prediction-tu3t.onrender.com/predict
 - **Frontend hosted on Netlify:** https://houseprice-prediction.netlify.app/
 
 💡 **You can use this API directly through the frontend by visiting the Netlify-hosted website.**  
